@@ -9,19 +9,20 @@ import UIKit
 import Charts
 
 class LiveGraphAirIndexViewController: UIViewController {
-
+    
     @IBOutlet weak var lineChartView: LineChartView!
+    @IBOutlet weak var lblCityName: UILabel!
+    
     var cityName = ""
-    var xAxisArray : [String]?
-    var yAxisArray : [Double]?
     var lineDataEntry: [ChartDataEntry] = []
     let webSConnect = WebSocketConnect()
     var arrCityAirIndex:[CityAirIndexModel]?
     var filterArr:[CityAirIndexModel]?
-    
+    var x = 10.0
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Live Graph"
+        self.lblCityName.text = cityName + " Air Index"
         setUpWebSocket()
         // Do any additional setup after loading the view.
     }
@@ -31,25 +32,24 @@ class LiveGraphAirIndexViewController: UIViewController {
         webSConnect.sendMessageClousre = {[weak self] message in
             self?.convertStringToJson(jsonStr: message)
         }
-//        webSConnect.receiveErrorClousre = {[weak self] in
-//
-//        }
+        //        webSConnect.receiveErrorClousre = {[weak self] in
+        //
+        //        }
     }
     func convertStringToJson(jsonStr: String) {
         arrCityAirIndex = jsonStr.parse(to: [CityAirIndexModel].self)
         filterArr = arrCityAirIndex?.filter({$0.city == cityName})
-        yAxisArray?.append(filterArr?[0].aqi ?? 0.0)
-        
         DispatchQueue.main.async {
             if self.filterArr?.count ?? 0 > 0 {
-            self.showOrUpdateLineChart(value: self.filterArr?[0].aqi ?? 0.0 )
+                self.showOrUpdateLineChart(value: self.filterArr?[0].aqi ?? 0.0 )
+                self.x += 30.0
             }
         }
         
     }
     
     func showOrUpdateLineChart(value: Double) {
-        let dataPoint = ChartDataEntry(x: 30.0, y: value)
+        let dataPoint = ChartDataEntry(x: x, y: value)
         lineDataEntry.append(dataPoint)
         let chartDataSet = LineChartDataSet(entries: lineDataEntry, label: cityName)
         let chartData = LineChartData()
@@ -68,13 +68,14 @@ class LiveGraphAirIndexViewController: UIViewController {
         }
         chartDataSet.fill = Fill.fillWithLinearGradient(gradient, angle: 90.0)
         chartDataSet.drawFilledEnabled = true
+        
         lineChartView.xAxis.labelPosition = .bottom
         lineChartView.xAxis.drawGridLinesEnabled = false
         lineChartView.legend.enabled = true
         lineChartView.rightAxis.enabled = false
         lineChartView.leftAxis.drawGridLinesEnabled = false
+        lineChartView.backgroundColor = .white
         lineChartView.data = chartData
-      
         
     }
 }

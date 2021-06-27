@@ -25,6 +25,7 @@ class CityAirIndexViewController: UIViewController {
         setUpWebSocket()
         updateTimer = Timer.scheduledTimer(timeInterval: 30, target: self, selector: #selector(runTimedCode), userInfo: nil, repeats: true)
     }
+    
     @objc func runTimedCode() {
         if isWebSocketStop {
             lastUpdatedValue()
@@ -56,6 +57,7 @@ class CityAirIndexViewController: UIViewController {
     }
     func convertStringToJson(jsonStr: String) {
         arrCityAirIndex = jsonStr.parse(to: [CityAirIndexModel].self)
+        self.lastUpdatedDate = Date()
         DispatchQueue.main.async {
             self.activityIndicator.stopAnimating()
             self.activityIndicator.isHidden = true

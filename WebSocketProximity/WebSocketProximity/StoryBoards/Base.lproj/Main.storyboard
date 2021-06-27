@@ -41,7 +41,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bta-Xe-g3s">
-                                                    <rect key="frame" x="332.5" y="28.5" width="41.5" height="21"/>
+                                                    <rect key="frame" x="347.5" y="28.5" width="41.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -58,11 +58,10 @@
                                                 <constraint firstAttribute="bottom" secondItem="A5d-ES-OTS" secondAttribute="bottom" id="1kv-Gt-AIP"/>
                                                 <constraint firstItem="x2S-dq-j5S" firstAttribute="centerY" secondItem="cSw-o6-eCr" secondAttribute="centerY" id="CZj-EU-0DB"/>
                                                 <constraint firstItem="vxO-os-db2" firstAttribute="centerY" secondItem="cSw-o6-eCr" secondAttribute="centerY" id="Gum-A0-X26"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="Bta-Xe-g3s" secondAttribute="trailing" constant="20" id="LMF-dH-u1A"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Bta-Xe-g3s" secondAttribute="trailing" constant="5" id="LMF-dH-u1A"/>
                                                 <constraint firstItem="x2S-dq-j5S" firstAttribute="centerX" secondItem="cSw-o6-eCr" secondAttribute="centerX" id="S2t-Lf-LdF"/>
                                                 <constraint firstItem="x2S-dq-j5S" firstAttribute="leading" secondItem="vxO-os-db2" secondAttribute="trailing" constant="30" id="SMQ-iy-isS"/>
                                                 <constraint firstItem="A5d-ES-OTS" firstAttribute="leading" secondItem="cSw-o6-eCr" secondAttribute="leading" id="XDn-9D-HtK"/>
-                                                <constraint firstItem="Bta-Xe-g3s" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="x2S-dq-j5S" secondAttribute="trailing" constant="8" symbolic="YES" id="atf-N0-SzD"/>
                                                 <constraint firstItem="Bta-Xe-g3s" firstAttribute="centerY" secondItem="cSw-o6-eCr" secondAttribute="centerY" id="dbd-sf-cVi"/>
                                                 <constraint firstItem="vxO-os-db2" firstAttribute="leading" secondItem="cSw-o6-eCr" secondAttribute="leadingMargin" constant="20" id="i3H-Wo-qd1"/>
                                                 <constraint firstAttribute="trailing" secondItem="A5d-ES-OTS" secondAttribute="trailing" id="kaw-x9-onG"/>
@@ -111,20 +110,29 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qaq-bM-5rP" customClass="LineChartView" customModule="Charts">
                                 <rect key="frame" x="10" y="244" width="394" height="408"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWY-cE-IVp">
+                                <rect key="frame" x="181.5" y="84" width="51.5" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.94117647059999998" green="0.38823529410000002" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eOp-uO-Mia"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="qaq-bM-5rP" firstAttribute="centerY" secondItem="xB6-fn-BbP" secondAttribute="centerY" id="B1l-jX-Bjk"/>
                             <constraint firstItem="qaq-bM-5rP" firstAttribute="centerX" secondItem="xB6-fn-BbP" secondAttribute="centerX" id="Oky-fE-bg7"/>
                             <constraint firstItem="eOp-uO-Mia" firstAttribute="trailing" secondItem="qaq-bM-5rP" secondAttribute="trailing" constant="10" id="TnF-Td-pO9"/>
+                            <constraint firstItem="GWY-cE-IVp" firstAttribute="centerX" secondItem="xB6-fn-BbP" secondAttribute="centerX" id="UZf-rY-CDF"/>
+                            <constraint firstItem="GWY-cE-IVp" firstAttribute="top" secondItem="eOp-uO-Mia" secondAttribute="top" constant="40" id="ad2-dA-TPJ"/>
                             <constraint firstItem="qaq-bM-5rP" firstAttribute="top" secondItem="eOp-uO-Mia" secondAttribute="top" constant="200" id="gZC-Vg-JNg"/>
                             <constraint firstItem="qaq-bM-5rP" firstAttribute="leading" secondItem="eOp-uO-Mia" secondAttribute="leading" constant="10" id="lBu-yL-sfw"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="lblCityName" destination="GWY-cE-IVp" id="zgX-gA-tMX"/>
                         <outlet property="lineChartView" destination="qaq-bM-5rP" id="2N0-jz-peV"/>
                     </connections>
                 </viewController>
