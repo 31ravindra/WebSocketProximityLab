@@ -1,0 +1,6 @@
+framework module Pods_WebSocketProximity_WebSocketProximityUITests {
+  umbrella header "Pods-WebSocketProximity-WebSocketProximityUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

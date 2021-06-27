@@ -1,0 +1,895 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		138B54E33AB37734F965B764 /* Pods_WebSocketProximityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60682F9D598E13E48995554 /* Pods_WebSocketProximityTests.framework */; };
+		8275F96F55067844EC1B15CF /* Pods_WebSocketProximity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9ADB3D81D17B3DA85A974BE /* Pods_WebSocketProximity.framework */; };
+		86BB41852B9F74D42C898F06 /* Pods_WebSocketProximity_WebSocketProximityUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C2780F4BD826C83EC1327C /* Pods_WebSocketProximity_WebSocketProximityUITests.framework */; };
+		E02DA69426870FF100394C09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02DA69326870FF100394C09 /* AppDelegate.swift */; };
+		E02DA69626870FF100394C09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02DA69526870FF100394C09 /* SceneDelegate.swift */; };
+		E02DA69B26870FF100394C09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E02DA69926870FF100394C09 /* Main.storyboard */; };
+		E02DA69E26870FF100394C09 /* WebSocketProximity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E02DA69C26870FF100394C09 /* WebSocketProximity.xcdatamodeld */; };
+		E02DA6A026870FF200394C09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E02DA69F26870FF200394C09 /* Assets.xcassets */; };
+		E02DA6A326870FF200394C09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E02DA6A126870FF200394C09 /* LaunchScreen.storyboard */; };
+		E02DA6AE26870FF300394C09 /* WebSocketProximityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02DA6AD26870FF300394C09 /* WebSocketProximityTests.swift */; };
+		E02DA6B926870FF300394C09 /* WebSocketProximityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02DA6B826870FF300394C09 /* WebSocketProximityUITests.swift */; };
+		E02DA6CE268711EE00394C09 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02DA6CD268711EE00394C09 /* WebSocket.swift */; };
+		E02DA6D32687120600394C09 /* WebSocketConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02DA6D22687120600394C09 /* WebSocketConnection.swift */; };
+		E02DA6D82687121F00394C09 /* WebsocketKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02DA6D72687121F00394C09 /* WebsocketKit.swift */; };
+		E02DA6E2268718F100394C09 /* CityAirIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02DA6E1268718F100394C09 /* CityAirIndexViewController.swift */; };
+		E02DA6EE26871E8F00394C09 /* CityIndexTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02DA6ED26871E8F00394C09 /* CityIndexTableViewCell.swift */; };
+		E02DA6FA268725C900394C09 /* CityAirIndexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02DA6F9268725C900394C09 /* CityAirIndexModel.swift */; };
+		E02DA7002687274400394C09 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02DA6FF2687274400394C09 /* Extension.swift */; };
+		E02DA71226872E4700394C09 /* LiveGraphAirIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02DA71126872E4700394C09 /* LiveGraphAirIndexViewController.swift */; };
+		E02DA718268740C100394C09 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02DA717268740C100394C09 /* Constant.swift */; };
+		E02DA732268749C600394C09 /* WebSocketTestDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02DA731268749C600394C09 /* WebSocketTestDelegate.swift */; };
+		E02DA73A268749E600394C09 /* WebSocketManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02DA739268749E600394C09 /* WebSocketManagerTests.swift */; };
+		E0A8439C268823C8003D9698 /* WebSocketConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A8439B268823C8003D9698 /* WebSocketConnect.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E02DA6AA26870FF300394C09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E02DA68826870FF100394C09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E02DA68F26870FF100394C09;
+			remoteInfo = WebSocketProximity;
+		};
+		E02DA6B526870FF300394C09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E02DA68826870FF100394C09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E02DA68F26870FF100394C09;
+			remoteInfo = WebSocketProximity;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08792133283127FC7B08F942 /* Pods-WebSocketProximity-WebSocketProximityUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebSocketProximity-WebSocketProximityUITests.debug.xcconfig"; path = "Target Support Files/Pods-WebSocketProximity-WebSocketProximityUITests/Pods-WebSocketProximity-WebSocketProximityUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1CA2CCD84AA64D64520A4849 /* Pods-WebSocketProximity-WebSocketProximityUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebSocketProximity-WebSocketProximityUITests.release.xcconfig"; path = "Target Support Files/Pods-WebSocketProximity-WebSocketProximityUITests/Pods-WebSocketProximity-WebSocketProximityUITests.release.xcconfig"; sourceTree = "<group>"; };
+		20E8C0746E07D27A45BEEC93 /* Pods-WebSocketProximity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebSocketProximity.release.xcconfig"; path = "Target Support Files/Pods-WebSocketProximity/Pods-WebSocketProximity.release.xcconfig"; sourceTree = "<group>"; };
+		89948F888DC094C697997465 /* Pods-WebSocketProximityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebSocketProximityTests.debug.xcconfig"; path = "Target Support Files/Pods-WebSocketProximityTests/Pods-WebSocketProximityTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A9ADB3D81D17B3DA85A974BE /* Pods_WebSocketProximity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebSocketProximity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8A2899204F218B90C89AFF5 /* Pods-WebSocketProximity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebSocketProximity.debug.xcconfig"; path = "Target Support Files/Pods-WebSocketProximity/Pods-WebSocketProximity.debug.xcconfig"; sourceTree = "<group>"; };
+		BD9391F8F30BFE4E6A632377 /* Pods-WebSocketProximityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebSocketProximityTests.release.xcconfig"; path = "Target Support Files/Pods-WebSocketProximityTests/Pods-WebSocketProximityTests.release.xcconfig"; sourceTree = "<group>"; };
+		C60682F9D598E13E48995554 /* Pods_WebSocketProximityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebSocketProximityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E02DA69026870FF100394C09 /* WebSocketProximity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebSocketProximity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E02DA69326870FF100394C09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E02DA69526870FF100394C09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E02DA69A26870FF100394C09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E02DA69D26870FF100394C09 /* WebSocketProximity.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WebSocketProximity.xcdatamodel; sourceTree = "<group>"; };
+		E02DA69F26870FF200394C09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E02DA6A226870FF200394C09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E02DA6A426870FF200394C09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E02DA6A926870FF300394C09 /* WebSocketProximityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebSocketProximityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E02DA6AD26870FF300394C09 /* WebSocketProximityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketProximityTests.swift; sourceTree = "<group>"; };
+		E02DA6AF26870FF300394C09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E02DA6B426870FF300394C09 /* WebSocketProximityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebSocketProximityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E02DA6B826870FF300394C09 /* WebSocketProximityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketProximityUITests.swift; sourceTree = "<group>"; };
+		E02DA6BA26870FF300394C09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E02DA6CD268711EE00394C09 /* WebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+		E02DA6D22687120600394C09 /* WebSocketConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketConnection.swift; sourceTree = "<group>"; };
+		E02DA6D72687121F00394C09 /* WebsocketKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsocketKit.swift; sourceTree = "<group>"; };
+		E02DA6E1268718F100394C09 /* CityAirIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityAirIndexViewController.swift; sourceTree = "<group>"; };
+		E02DA6ED26871E8F00394C09 /* CityIndexTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityIndexTableViewCell.swift; sourceTree = "<group>"; };
+		E02DA6F9268725C900394C09 /* CityAirIndexModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityAirIndexModel.swift; sourceTree = "<group>"; };
+		E02DA6FF2687274400394C09 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		E02DA71126872E4700394C09 /* LiveGraphAirIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveGraphAirIndexViewController.swift; sourceTree = "<group>"; };
+		E02DA717268740C100394C09 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		E02DA731268749C600394C09 /* WebSocketTestDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketTestDelegate.swift; sourceTree = "<group>"; };
+		E02DA739268749E600394C09 /* WebSocketManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManagerTests.swift; sourceTree = "<group>"; };
+		E0A8439B268823C8003D9698 /* WebSocketConnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketConnect.swift; sourceTree = "<group>"; };
+		F5C2780F4BD826C83EC1327C /* Pods_WebSocketProximity_WebSocketProximityUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebSocketProximity_WebSocketProximityUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E02DA68D26870FF100394C09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8275F96F55067844EC1B15CF /* Pods_WebSocketProximity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E02DA6A626870FF300394C09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				138B54E33AB37734F965B764 /* Pods_WebSocketProximityTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E02DA6B126870FF300394C09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86BB41852B9F74D42C898F06 /* Pods_WebSocketProximity_WebSocketProximityUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4EA6D82A1EB20CCCB5018C37 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8A2899204F218B90C89AFF5 /* Pods-WebSocketProximity.debug.xcconfig */,
+				20E8C0746E07D27A45BEEC93 /* Pods-WebSocketProximity.release.xcconfig */,
+				08792133283127FC7B08F942 /* Pods-WebSocketProximity-WebSocketProximityUITests.debug.xcconfig */,
+				1CA2CCD84AA64D64520A4849 /* Pods-WebSocketProximity-WebSocketProximityUITests.release.xcconfig */,
+				89948F888DC094C697997465 /* Pods-WebSocketProximityTests.debug.xcconfig */,
+				BD9391F8F30BFE4E6A632377 /* Pods-WebSocketProximityTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5BC499A49C5C7887FB990A3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9ADB3D81D17B3DA85A974BE /* Pods_WebSocketProximity.framework */,
+				F5C2780F4BD826C83EC1327C /* Pods_WebSocketProximity_WebSocketProximityUITests.framework */,
+				C60682F9D598E13E48995554 /* Pods_WebSocketProximityTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E02DA68726870FF100394C09 = {
+			isa = PBXGroup;
+			children = (
+				E02DA69226870FF100394C09 /* WebSocketProximity */,
+				E02DA6AC26870FF300394C09 /* WebSocketProximityTests */,
+				E02DA6B726870FF300394C09 /* WebSocketProximityUITests */,
+				E02DA69126870FF100394C09 /* Products */,
+				4EA6D82A1EB20CCCB5018C37 /* Pods */,
+				5BC499A49C5C7887FB990A3B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E02DA69126870FF100394C09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E02DA69026870FF100394C09 /* WebSocketProximity.app */,
+				E02DA6A926870FF300394C09 /* WebSocketProximityTests.xctest */,
+				E02DA6B426870FF300394C09 /* WebSocketProximityUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E02DA69226870FF100394C09 /* WebSocketProximity */ = {
+			isa = PBXGroup;
+			children = (
+				E0A8439A268823AA003D9698 /* UtilityClasses */,
+				E02DA716268740AD00394C09 /* Constants */,
+				E02DA6FE2687273100394C09 /* Extensions */,
+				E02DA6F52687258600394C09 /* Models */,
+				E02DA6EC26871E4C00394C09 /* UItableViewCells */,
+				E02DA6CC268711CC00394C09 /* WebSocketManagerClasses */,
+				E02DA6CB268711BA00394C09 /* CommonFiles */,
+				E02DA6CA268711A900394C09 /* StoryBoards */,
+				E02DA6C92687119900394C09 /* ViewControllers */,
+				E02DA69F26870FF200394C09 /* Assets.xcassets */,
+				E02DA6A126870FF200394C09 /* LaunchScreen.storyboard */,
+				E02DA6A426870FF200394C09 /* Info.plist */,
+				E02DA69C26870FF100394C09 /* WebSocketProximity.xcdatamodeld */,
+			);
+			path = WebSocketProximity;
+			sourceTree = "<group>";
+		};
+		E02DA6AC26870FF300394C09 /* WebSocketProximityTests */ = {
+			isa = PBXGroup;
+			children = (
+				E02DA730268749AE00394C09 /* WebSocketManagerTests */,
+				E02DA6AD26870FF300394C09 /* WebSocketProximityTests.swift */,
+				E02DA6AF26870FF300394C09 /* Info.plist */,
+			);
+			path = WebSocketProximityTests;
+			sourceTree = "<group>";
+		};
+		E02DA6B726870FF300394C09 /* WebSocketProximityUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E02DA6B826870FF300394C09 /* WebSocketProximityUITests.swift */,
+				E02DA6BA26870FF300394C09 /* Info.plist */,
+			);
+			path = WebSocketProximityUITests;
+			sourceTree = "<group>";
+		};
+		E02DA6C92687119900394C09 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E02DA6E1268718F100394C09 /* CityAirIndexViewController.swift */,
+				E02DA71126872E4700394C09 /* LiveGraphAirIndexViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E02DA6CA268711A900394C09 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				E02DA69926870FF100394C09 /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		E02DA6CB268711BA00394C09 /* CommonFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E02DA69326870FF100394C09 /* AppDelegate.swift */,
+				E02DA69526870FF100394C09 /* SceneDelegate.swift */,
+			);
+			path = CommonFiles;
+			sourceTree = "<group>";
+		};
+		E02DA6CC268711CC00394C09 /* WebSocketManagerClasses */ = {
+			isa = PBXGroup;
+			children = (
+				E02DA6CD268711EE00394C09 /* WebSocket.swift */,
+				E02DA6D22687120600394C09 /* WebSocketConnection.swift */,
+				E02DA6D72687121F00394C09 /* WebsocketKit.swift */,
+			);
+			path = WebSocketManagerClasses;
+			sourceTree = "<group>";
+		};
+		E02DA6EC26871E4C00394C09 /* UItableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				E02DA6ED26871E8F00394C09 /* CityIndexTableViewCell.swift */,
+			);
+			path = UItableViewCells;
+			sourceTree = "<group>";
+		};
+		E02DA6F52687258600394C09 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E02DA6F9268725C900394C09 /* CityAirIndexModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E02DA6FE2687273100394C09 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E02DA6FF2687274400394C09 /* Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E02DA716268740AD00394C09 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				E02DA717268740C100394C09 /* Constant.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		E02DA730268749AE00394C09 /* WebSocketManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E02DA731268749C600394C09 /* WebSocketTestDelegate.swift */,
+				E02DA739268749E600394C09 /* WebSocketManagerTests.swift */,
+			);
+			path = WebSocketManagerTests;
+			sourceTree = "<group>";
+		};
+		E0A8439A268823AA003D9698 /* UtilityClasses */ = {
+			isa = PBXGroup;
+			children = (
+				E0A8439B268823C8003D9698 /* WebSocketConnect.swift */,
+			);
+			path = UtilityClasses;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E02DA68F26870FF100394C09 /* WebSocketProximity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E02DA6BD26870FF300394C09 /* Build configuration list for PBXNativeTarget "WebSocketProximity" */;
+			buildPhases = (
+				75EFA6A9531D4CBCF1F420BA /* [CP] Check Pods Manifest.lock */,
+				E02DA68C26870FF100394C09 /* Sources */,
+				E02DA68D26870FF100394C09 /* Frameworks */,
+				E02DA68E26870FF100394C09 /* Resources */,
+				364177D85C74033C3C437E9A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebSocketProximity;
+			productName = WebSocketProximity;
+			productReference = E02DA69026870FF100394C09 /* WebSocketProximity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E02DA6A826870FF300394C09 /* WebSocketProximityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E02DA6C026870FF300394C09 /* Build configuration list for PBXNativeTarget "WebSocketProximityTests" */;
+			buildPhases = (
+				BA3A9A3E1698F80379B6285A /* [CP] Check Pods Manifest.lock */,
+				E02DA6A526870FF300394C09 /* Sources */,
+				E02DA6A626870FF300394C09 /* Frameworks */,
+				E02DA6A726870FF300394C09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E02DA6AB26870FF300394C09 /* PBXTargetDependency */,
+			);
+			name = WebSocketProximityTests;
+			productName = WebSocketProximityTests;
+			productReference = E02DA6A926870FF300394C09 /* WebSocketProximityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E02DA6B326870FF300394C09 /* WebSocketProximityUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E02DA6C326870FF300394C09 /* Build configuration list for PBXNativeTarget "WebSocketProximityUITests" */;
+			buildPhases = (
+				E24BBC226F4EF923D9E5BCA9 /* [CP] Check Pods Manifest.lock */,
+				E02DA6B026870FF300394C09 /* Sources */,
+				E02DA6B126870FF300394C09 /* Frameworks */,
+				E02DA6B226870FF300394C09 /* Resources */,
+				42AA7D5B5AA12A2BB75CDFEA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E02DA6B626870FF300394C09 /* PBXTargetDependency */,
+			);
+			name = WebSocketProximityUITests;
+			productName = WebSocketProximityUITests;
+			productReference = E02DA6B426870FF300394C09 /* WebSocketProximityUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E02DA68826870FF100394C09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					E02DA68F26870FF100394C09 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					E02DA6A826870FF300394C09 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = E02DA68F26870FF100394C09;
+					};
+					E02DA6B326870FF300394C09 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = E02DA68F26870FF100394C09;
+					};
+				};
+			};
+			buildConfigurationList = E02DA68B26870FF100394C09 /* Build configuration list for PBXProject "WebSocketProximity" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E02DA68726870FF100394C09;
+			productRefGroup = E02DA69126870FF100394C09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E02DA68F26870FF100394C09 /* WebSocketProximity */,
+				E02DA6A826870FF300394C09 /* WebSocketProximityTests */,
+				E02DA6B326870FF300394C09 /* WebSocketProximityUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E02DA68E26870FF100394C09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E02DA6A326870FF200394C09 /* LaunchScreen.storyboard in Resources */,
+				E02DA6A026870FF200394C09 /* Assets.xcassets in Resources */,
+				E02DA69B26870FF100394C09 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E02DA6A726870FF300394C09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E02DA6B226870FF300394C09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		364177D85C74033C3C437E9A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WebSocketProximity/Pods-WebSocketProximity-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WebSocketProximity/Pods-WebSocketProximity-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WebSocketProximity/Pods-WebSocketProximity-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42AA7D5B5AA12A2BB75CDFEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WebSocketProximity-WebSocketProximityUITests/Pods-WebSocketProximity-WebSocketProximityUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WebSocketProximity-WebSocketProximityUITests/Pods-WebSocketProximity-WebSocketProximityUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WebSocketProximity-WebSocketProximityUITests/Pods-WebSocketProximity-WebSocketProximityUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75EFA6A9531D4CBCF1F420BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebSocketProximity-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA3A9A3E1698F80379B6285A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebSocketProximityTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E24BBC226F4EF923D9E5BCA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebSocketProximity-WebSocketProximityUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E02DA68C26870FF100394C09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E02DA6D82687121F00394C09 /* WebsocketKit.swift in Sources */,
+				E02DA69426870FF100394C09 /* AppDelegate.swift in Sources */,
+				E0A8439C268823C8003D9698 /* WebSocketConnect.swift in Sources */,
+				E02DA69626870FF100394C09 /* SceneDelegate.swift in Sources */,
+				E02DA6FA268725C900394C09 /* CityAirIndexModel.swift in Sources */,
+				E02DA6EE26871E8F00394C09 /* CityIndexTableViewCell.swift in Sources */,
+				E02DA7002687274400394C09 /* Extension.swift in Sources */,
+				E02DA6E2268718F100394C09 /* CityAirIndexViewController.swift in Sources */,
+				E02DA6D32687120600394C09 /* WebSocketConnection.swift in Sources */,
+				E02DA69E26870FF100394C09 /* WebSocketProximity.xcdatamodeld in Sources */,
+				E02DA71226872E4700394C09 /* LiveGraphAirIndexViewController.swift in Sources */,
+				E02DA6CE268711EE00394C09 /* WebSocket.swift in Sources */,
+				E02DA718268740C100394C09 /* Constant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E02DA6A526870FF300394C09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E02DA732268749C600394C09 /* WebSocketTestDelegate.swift in Sources */,
+				E02DA73A268749E600394C09 /* WebSocketManagerTests.swift in Sources */,
+				E02DA6AE26870FF300394C09 /* WebSocketProximityTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E02DA6B026870FF300394C09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E02DA6B926870FF300394C09 /* WebSocketProximityUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E02DA6AB26870FF300394C09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E02DA68F26870FF100394C09 /* WebSocketProximity */;
+			targetProxy = E02DA6AA26870FF300394C09 /* PBXContainerItemProxy */;
+		};
+		E02DA6B626870FF300394C09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E02DA68F26870FF100394C09 /* WebSocketProximity */;
+			targetProxy = E02DA6B526870FF300394C09 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E02DA69926870FF100394C09 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E02DA69A26870FF100394C09 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E02DA6A126870FF200394C09 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E02DA6A226870FF200394C09 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E02DA6BB26870FF300394C09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E02DA6BC26870FF300394C09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E02DA6BE26870FF300394C09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8A2899204F218B90C89AFF5 /* Pods-WebSocketProximity.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RBC3ZW7CHU;
+				INFOPLIST_FILE = WebSocketProximity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.proximity.WebSocketProximity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E02DA6BF26870FF300394C09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20E8C0746E07D27A45BEEC93 /* Pods-WebSocketProximity.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RBC3ZW7CHU;
+				INFOPLIST_FILE = WebSocketProximity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.proximity.WebSocketProximity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E02DA6C126870FF300394C09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89948F888DC094C697997465 /* Pods-WebSocketProximityTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RBC3ZW7CHU;
+				INFOPLIST_FILE = WebSocketProximityTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.proximity.WebSocketProximityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebSocketProximity.app/WebSocketProximity";
+			};
+			name = Debug;
+		};
+		E02DA6C226870FF300394C09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD9391F8F30BFE4E6A632377 /* Pods-WebSocketProximityTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RBC3ZW7CHU;
+				INFOPLIST_FILE = WebSocketProximityTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.proximity.WebSocketProximityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebSocketProximity.app/WebSocketProximity";
+			};
+			name = Release;
+		};
+		E02DA6C426870FF300394C09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08792133283127FC7B08F942 /* Pods-WebSocketProximity-WebSocketProximityUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RBC3ZW7CHU;
+				INFOPLIST_FILE = WebSocketProximityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.proximity.WebSocketProximityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WebSocketProximity;
+			};
+			name = Debug;
+		};
+		E02DA6C526870FF300394C09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CA2CCD84AA64D64520A4849 /* Pods-WebSocketProximity-WebSocketProximityUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RBC3ZW7CHU;
+				INFOPLIST_FILE = WebSocketProximityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.proximity.WebSocketProximityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WebSocketProximity;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E02DA68B26870FF100394C09 /* Build configuration list for PBXProject "WebSocketProximity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E02DA6BB26870FF300394C09 /* Debug */,
+				E02DA6BC26870FF300394C09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E02DA6BD26870FF300394C09 /* Build configuration list for PBXNativeTarget "WebSocketProximity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E02DA6BE26870FF300394C09 /* Debug */,
+				E02DA6BF26870FF300394C09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E02DA6C026870FF300394C09 /* Build configuration list for PBXNativeTarget "WebSocketProximityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E02DA6C126870FF300394C09 /* Debug */,
+				E02DA6C226870FF300394C09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E02DA6C326870FF300394C09 /* Build configuration list for PBXNativeTarget "WebSocketProximityUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E02DA6C426870FF300394C09 /* Debug */,
+				E02DA6C526870FF300394C09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E02DA69C26870FF100394C09 /* WebSocketProximity.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E02DA69D26870FF100394C09 /* WebSocketProximity.xcdatamodel */,
+			);
+			currentVersion = E02DA69D26870FF100394C09 /* WebSocketProximity.xcdatamodel */;
+			path = WebSocketProximity.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E02DA68826870FF100394C09 /* Project object */;
+}
